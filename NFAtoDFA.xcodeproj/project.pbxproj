@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		A5CB517D2487FCF200F4F0E0 /* NFAtoDFA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NFAtoDFA; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB51802487FCF200F4F0E0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5CB518A248821F100F4F0E0 /* nfatable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = nfatable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				A5CB51802487FCF200F4F0E0 /* main.cpp */,
+				A5CB518A248821F100F4F0E0 /* nfatable.hpp */,
 			);
 			path = NFAtoDFA;
 			sourceTree = "<group>";
