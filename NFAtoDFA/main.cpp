@@ -18,12 +18,6 @@ using namespace std;
  
   
 
-
-
-
-
-
-//이 함수에서 주의할 점....*** 이 함수를 한 번 거치면 , 매개변수로 넘겨준 state 집합에서 입실론 무브롤 한 번 해서 갈 수 있는 state들의 집합이 된다. 따라서 어떤 state집합(벡터)에서 e-move로 몇 번이고 반복해서 갈 수 있는 모든 state들을 포함하는 벡터를 만드려면, 이 함수를 while문을 이용하여,  매개변수로 준 a라는 벡터와 결과값 벡터가 같아질 때까지 해야한다..%%%%%%%중요%%%%%%%
 bool vecComp(vector<int> a, vector<int> b){
    
     if(a.size()!=b.size()){
@@ -423,17 +417,7 @@ int main(int argc, const char * argv[]) {
        
     }
   
-    
- 
-    // 숫자로 해서 transition어디로 갈 수 있는지 나왔어.
-    //그 갯수만큼  state나타내는 정수벡터 만들어서 추가.
-    //차례로 해당 트랜지션 심볼을 이용해서, qi에 속해있는 모든 state원소에서 어느 state들로  갈 수 있는지 0~120번 모두 체크( 첫 움직임은 해당 transition symbol일 수 밖에 없고, 거기서 e-move가능한 놈들 다 모으면 됨. 그게 이제 q(i+1)이 되는거임
-    //새로 만들어진 q(i+1)이 원래 있던 dfa state중에 있으면,됐고, 없으면 새로운 int vector만드는거임.
-    
-   //이 연결을 어떻게 저장하냐며는, dfa세로축이 q0,q1,q2등 state이고 가로축이 0~34번의 input symbol이기 때문에,dfa[i][심볼번호]=i혹은 i+1 혹은 i+2.... 이렇게 ㅎ 그리고 마지막에 dfa 출력해주면 된다.
-    
-    
-    
+
       /* Terminal 20가지 vtype, num, float, literal, id, if, else, while, for, return, addsub, multdiv,assign, comp, semi, comma, lparen, rparen, lbrace, rbrace  Non-terminal 15가지 CODE, VDECL, ASSIGN, FDECL, ARG, MOREARGS, BLOCK, STMT, ELSE,RHS, EXPR, TERM, FACTOR, COND, RETURN */
     
     
